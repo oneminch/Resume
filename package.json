@@ -10,10 +10,11 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
+        "@fontsource/inter": "^5.2.6",
         "@nuxt/icon": "^1.15.0",
         "@tailwindcss/vite": "^4.1.12",
         "nuxt": "^4.0.3",
         "tailwindcss": "^4.1.12"
     },
-    "packageManager":  "pnpm@10.14.0"
+    "packageManager": "pnpm@10.14.0"
 }

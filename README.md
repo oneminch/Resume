@@ -1,8 +1,8 @@
-# Resume
+# Résumé
 
 ![Screenshot](/public/cover.png)
 
-A minimal, single-column, print-friendly Resume/CV template built with Nuxt. Designed following modern resume best practices with easy customization through a single configuration file.
+A minimal, single-column, print-friendly Résumé/CV template built with Nuxt. Designed following modern résumé best practices with easy customization through a single configuration file.
 
 ## Features
 
@@ -12,7 +12,7 @@ A minimal, single-column, print-friendly Resume/CV template built with Nuxt. Des
 -   🔧 Strongly typed configuration with full IDE support
 -   🚀 Easy deployment to any hosting platform
 -   📄 Single-column layout for better ATS compatibility
--   🎯 Follows modern resume best practices
+-   🎯 Follows modern résumé best practices
 
 ## Quick Start
 
@@ -30,7 +30,7 @@ cd Resume
 pnpm install
 ```
 
-3. **Customize your resume data**
+3. **Customize your résumé data**
 
 Edit the `app.config.ts` file with your personal information:
 
@@ -48,7 +48,7 @@ export default defineAppConfig({
 				// ... other contact info
 			},
 		},
-		// ... rest of your resume data
+		// ... rest of your résumé data
 	},
 });
 ```
@@ -67,7 +67,7 @@ pnpm run build
 
 ## Configuration
 
-The resume template is configured through the `app.config.ts` file. The configuration is fully typed, providing excellent IDE support with autocompletion and type checking.
+The résumé template is configured through the `app.config.ts` file. The configuration is fully typed, providing excellent IDE support with autocompletion and type checking.
 
 ### Sections Available
 

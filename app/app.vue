@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+
 const { resume } = useAppConfig()
 
 useHead({
@@ -8,6 +13,8 @@ useHead({
         { property: 'og:title', content: `${resume.personalInfo.name} - ${resume.personalInfo.title}` },
         { property: 'og:description', content: resume.personalInfo.summary },
         { property: 'og:type', content: 'profile' },
+        { property: 'og:image', content: '/og-image.png' },
+        { property: 'twitter:image', content: '/og-image.png' },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: `${resume.personalInfo.name} - ${resume.personalInfo.title}` },
         { name: 'twitter:description', content: resume.personalInfo.summary }
