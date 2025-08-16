@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     ],
     css: ["~/assets/css/main.css"],
     app: {
-        # baseURL: "/Resume/",
+        // baseURL: "/Resume/",
         head: {
             title: "Professional Resume Template",
             meta: [
