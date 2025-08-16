@@ -1,0 +1,18 @@
+{
+    "name": "nuxt-resume",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@nuxt/icon": "^1.15.0",
+        "@tailwindcss/vite": "^4.1.11",
+        "nuxt": "^4.0.3",
+        "tailwindcss": "^4.1.11"
+    }
+}

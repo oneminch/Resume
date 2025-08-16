@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+    --color-accent: var(--color-rose-500);
+    --color-pill: var(--color-zinc-300);
+    --color-bg-dot: --alpha(var(--color-zinc-200) / 50%);
+}
+
+/* Gradient animation keyframes */
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Utility for animated gradient background */
+@utility animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-move 3s ease-in-out infinite;
+}
+
+@utility global-focus {
+    @apply outline-hidden ring-2 ring-offset-0 ring-accent/75;
+}
+
+
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-zinc-200, currentcolor);
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        background-image: radial-gradient(circle at 2px 2px,
+                var(--color-bg-dot) 1px,
+                transparent 0);
+        @apply leading-relaxed bg-size-[15px_15px] bg-zinc-50 print:bg-white print:bg-none pt-10;
+    }
+}
+
+@utility pill {
+    @apply px-3 py-0.5 bg-pill/25 print:bg-pill/50 ring-[0.5px] ring-pill text-zinc-800 text-xs rounded-full;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 11px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    @page {
+        margin: 3rem;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .print-break {
+        page-break-before: always;
+    }
+
+    .print-avoid-break {
+        page-break-inside: auto;
+        break-inside: auto;
+    }
+
+    .print-allow-break {
+        page-break-inside: auto;
+        break-inside: auto;
+    }
+
+    * {
+        box-shadow: none !important;
+    }
+
+    a {
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+
+    .max-w-4xl {
+        max-width: none !important;
+    }
+}
