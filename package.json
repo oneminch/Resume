@@ -14,5 +14,6 @@
         "@tailwindcss/vite": "^4.1.12",
         "nuxt": "^4.0.3",
         "tailwindcss": "^4.1.12"
-    }
+    },
+    "packageManager":  "pnpm@10.14.0"
 }
