@@ -7,8 +7,9 @@ export default defineNuxtConfig({
     modules: [
         "@nuxt/icon",
     ],
-    css: ["assets/css/main.css"],
+    css: ["~/assets/css/main.css"],
     app: {
+        baseURL: "/Resume/",
         head: {
             title: "Professional Resume Template",
             meta: [
