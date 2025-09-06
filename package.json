@@ -12,9 +12,9 @@
     "dependencies": {
         "@fontsource/inter": "^5.2.6",
         "@nuxt/icon": "^1.15.0",
-        "@tailwindcss/vite": "^4.1.12",
-        "nuxt": "^4.0.3",
-        "tailwindcss": "^4.1.12"
+        "@tailwindcss/vite": "^4.1.13",
+        "nuxt": "^4.1.1",
+        "tailwindcss": "^4.1.13"
     },
     "packageManager": "pnpm@10.14.0"
 }
