@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "@fontsource/inter": "^5.2.6",
-        "@nuxt/icon": "^1.15.0",
+        "@nuxt/icon": "^2.0.0",
         "@tailwindcss/vite": "^4.1.13",
         "nuxt": "^4.1.1",
         "tailwindcss": "^4.1.13"
