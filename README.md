@@ -19,9 +19,9 @@ A minimal, single-column, print-friendly Résumé/CV template built with Nuxt. D
 1. **Fork and clone this repository**
 
 ```bash
-git clone https://github.com/oneminch/Resume.git
+git clone https://github.com/oneminch/resume.git
 
-cd Resume
+cd resume
 ```
 
 2. **Install dependencies**
