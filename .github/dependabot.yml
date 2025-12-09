@@ -1,13 +1,16 @@
 version: 2
 updates:
-    - package-ecosystem: npm
-      directory: /
-      schedule:
-          interval: monthly
-      groups:
-          monthly-updates:
-              patterns:
-                  - "*"
-              update-types:
-                  - minor
-                  - patch
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: 'cron'
+      cronjob: '0 0 1 */3 *'
+    groups:
+      regular-updates:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+    assignees:
+      - 'oneminch'
