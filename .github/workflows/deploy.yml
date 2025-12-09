@@ -9,3 +9,6 @@ on:
 jobs:
   deploy:
     uses: oneminch/workflows/.github/workflows/gh-pages-deploy.yml@v1
+    permissions:
+      pages: write
+      id-token: write
